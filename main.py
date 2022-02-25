@@ -12,7 +12,7 @@ refreshSec = 0.001
 
 window = Tk()
 
-window.geometry('1700x500')
+window.geometry('1800x500')
 window.title('Curling Sim')
 
 canvas = Canvas(window, width=1800, height=500)
@@ -363,39 +363,6 @@ def updateCurrentRockLocations():
         currentRockLocations.append(currentLocation)
     # print(currentRockLocations)
     return currentRockLocations
-
-
-# ----------------------------------------------------------------------------------------------------------------
-
-newWindow = Toplevel(window)
-newWindow.title('new window')
-newWindow.geometry('600x550')
-newWindow.title('Close-Up View')
-
-# x range = 100-490, y range = 175-325
-
-canvasNewWindow = Canvas(newWindow, width=600, height=550)
-
-# left side of sheet
-canvasNewWindow.create_line(50, 50, 50, 500)
-
-# right side of sheet
-canvasNewWindow.create_line(540, 50, 540, 500)
-
-# HOUSE (center points = (300, 275)
-# 12 ft outer circles (12ft = diameter = 120px = r = 60px)
-# canvas.create_oval(220, 190, 340, 310, fill='blue')
-# 8 ft middle circles (8ft = diameter = 80px = r = 40px)
-# canvas.create_oval(240, 210, 320, 290, fill='white')
-# 4ft inner circles (4ft = diameter = 40px = r = 20px)
-# canvas.create_oval(260, 230, 300, 270, fill='red')
-# inner most circle (r = 6in = 0.5ft = 5px)
-canvasNewWindow.create_oval(295, 270, 305, 280, fill='white')
-
-def launchWindow():
-    canvas.pack()
-    canvasNewWindow.pack()
-    window.mainloop()
 
 # ----------------------------------------------------------------------------------------------------------------
 
