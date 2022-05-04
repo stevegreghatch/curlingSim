@@ -37,7 +37,6 @@ global stone8R
 currentRockLocations = []
 listOfThrownRocks = []
 
-
 # line parameters: (start x, start y, end x, end y)
 # sheet measurements
 def displayMeasurements():
@@ -150,22 +149,6 @@ def displaySheet():
 
 def displayStones(stonePosition):
     # (diameter = 11in = 0.916667ft = 9.16667px)
-    global stone1Y
-    global stone1R
-    global stone2Y
-    global stone3Y
-    global stone4Y
-    global stone5Y
-    global stone6Y
-    global stone7Y
-    global stone8Y
-    global stone2R
-    global stone3R
-    global stone4R
-    global stone5R
-    global stone6R
-    global stone7R
-    global stone8R
 
     if stonePosition == 'left':
         # ON LEFT
